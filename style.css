@@ -931,6 +931,9 @@ textarea:focus ~ .underline:after
 
     font-weight: 600;
 }
+        .navbar-default .container-fluid{
+    padding: 0;
+}
 }
 
 
@@ -1036,9 +1039,7 @@ textarea:focus ~ .underline:after
     display: inline;
 }
 
-    .navbar-default .container-fluid{
-    padding: 0;
-}
+
 
 }
 
