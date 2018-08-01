@@ -432,31 +432,40 @@ hr.opacity
     background-color: #fff;
 }
 
+figure{
+     overflow: hidden;
+}
 
 .figureimage
 {
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 175px;
-    margin-top: 55px;
-    border-right: 8px solid #24cf88;
-    border-left:8px solid #24cf88;
-    background-color: #24cf88;
-    position: relative;
+    height: 200px;
     transition: .5s;
-    text-align: left;
+    margin-top: 25px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
 
 }
+
 .figureimage .after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% + 25px);
+    height: 200px;
     visibility: none;
     color: #FFF;
     transition: .5s;
-    margin-top: -25px;
 }
+
+.figureimage:hover  img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
 .figureimage .after p{
     opacity: 0;
     margin-left: 10px;
@@ -476,7 +485,6 @@ hr.opacity
 .figureimage img{
     width: 100%;
     height: 200px;
-    margin-top: -25px;
       -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
