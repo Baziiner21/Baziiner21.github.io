@@ -1035,6 +1035,10 @@ textarea:focus ~ .underline:after
     text-align: center;
     display: inline;
 }
+
+    .navbar-default .container-fluid{
+    padding: 0;
+}
 }
 
 
