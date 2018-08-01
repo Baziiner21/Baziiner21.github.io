@@ -932,7 +932,7 @@ textarea:focus ~ .underline:after
     font-weight: 600;
 }
         .navbar-default .container-fluid{
-    padding: 0;
+    padding: 0 5px;
 }
 }
 
