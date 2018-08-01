@@ -15,9 +15,6 @@
 
 }
 
-.navbar-default .container-fluid{
-    padding: 0 35px;
-}
 
 
 .navbar-default .navbar-brand,
@@ -932,7 +929,7 @@ textarea:focus ~ .underline:after
     font-weight: 600;
 }
         .navbar-default .container-fluid{
-    padding: 0 5px;
+    padding: 0 10px;
 }
 }
 
@@ -1039,7 +1036,9 @@ textarea:focus ~ .underline:after
     display: inline;
 }
 
-
+.navbar-default .container-fluid{
+    padding: 0 35px;
+}
 
 }
 
