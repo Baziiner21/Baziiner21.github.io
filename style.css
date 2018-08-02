@@ -1093,7 +1093,7 @@ textarea:focus ~ .underline:after
 
 
 
-@-webkit-keyframes gradientBackground
+/*@-webkit-keyframes gradientBackground
 {
     0%
     {
@@ -1153,7 +1153,7 @@ textarea:focus ~ .underline:after
         background-position: 0 92%;
     }
 }
-
+*/
 
 
 @-webkit-keyframes scroll_wheel
