@@ -1,22 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="sandrokekeliaa@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,11 +138,12 @@ if($_POST["submit"]) {
 					<div class="col-xs-12">
 						<p class="about_tools">Tools:</p>
 						<p class="float_text">Jquery</p>
-						<p class="float_text">NodeJS</p>
+						<p class="float_text">Git</p>
+						<p class="float_text">Github</p>
 						<p class="float_text">Bootstrap</p>
 						<p class="float_text">Codepen</p>
 						<p class="float_text">JSFiddle</p>
-						<p class="float_text">Github</p>
+
 
 						<p class="float_text">Bitbucket</p>
 					</div>
@@ -227,11 +209,11 @@ if($_POST["submit"]) {
 				</div>
 				<div class="col-sm-8 col-xs-10">
 
-					<form method="post" action="index.php" autocomplete="off" >
+					<form method="post" action="#" autocomplete="off" >
 				<div class="form-group col-sm-6">
 
 					
-   					<input type="text" class="form-control"  id="name" name="sender" required >
+   					<input type="text" class="form-control"  id="name" required >
    					<span class="underline"></span>
    					<label for="name">Your name</label>
    					
@@ -239,7 +221,7 @@ if($_POST["submit"]) {
   				<div class="form-group col-sm-6">
 
   					
-    				<input type="email" class="form-control"  id="email" name="senderEmail" required>
+    				<input type="email" class="form-control"  id="email"  required>
     				<span class="underline"></span>
     				<label for="email">Email</label>
     				
@@ -247,12 +229,12 @@ if($_POST["submit"]) {
   				</div>
   				<div class="form-group col-sm-12">
   					
-  					<textarea class="form-control" id="textarea" name="message" required></textarea>
+  					<textarea class="form-control" id="textarea" required></textarea>
   					<span class="underline"></span>
-  					<label for="textarea" >Message</label>
+  					<label for="textarea">Message</label>
   				</div>
   				<div class="form-group col-sm-12 cnt-btn">
- 				 <button type="submit" class="btn btn-default">Submit<i class="fas fa-arrow-right" name="submit"></i> </button>
+ 				 <button type="submit" class="btn btn-default">Submit<i class="fas fa-arrow-right"></i> </button>
  				</div>
 			</form>
 
