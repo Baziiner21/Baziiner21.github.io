@@ -1,0 +1,322 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="sandrokekeliaa@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta property="og:title" content="Sandro Kekelia">
+    <meta name="author" content="Sandro Kekelia">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Web Developer">
+    <meta property="og:description" content="Web Developer">
+
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="map.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9YGTcliYnDgn2J-sGZ5ma56mNH4jZA-s&callback=initMap"
+    	async defer></script>
+
+
+	<title>Sandro Kekelia | Front-end web developer</title>
+
+
+</head>
+<body>
+
+
+	<nav class="navbar navbar-default navbar-fixed-top " id="navbar">
+  <div class="container-fluid">
+
+  	<div class="navbar-header navbar-middle">
+  		<button type="button" class="navbar-toggle collapsed anim_button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">Sandro Kekelia</a>
+    </div>
+ 		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#projects">My projects</a></li>
+      <li><a href="#contactMe" >Contact me</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+	
+	
+
+
+	<header class="home" id="home">
+		
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Front-end web developer</h1>
+				<hr>
+				<h2 class="opText">
+					Passionate developer and a comic book fan based in Georgia , Tbilisi. 
+				</h2>
+			</div>
+		</div>
+		<div class="row ">
+
+			<div class="col-xs-12 div_mouse">
+
+				<a href="#scrollToIt"><i class="far fa-circle fa-3x tap animated"></i></a>
+
+				<div class="mouse_scroll">
+
+    				<a href="#scrollToIt" class="anchor">
+        		<div class="mouse">
+            		<div class="wheel"></div>
+        		</div>
+    				</a>
+				</div>
+
+				
+			</div>
+		</div>
+
+
+		<div class="social_links">
+			  			<a href="https://goo.gl/f8km1T" target="_blank" class="home_links"><i class="fab fa-linkedin-in"></i></a>
+  						<a href="https://goo.gl/ocs8DJ" target="_blank" class="home_links"><i class="fab fa-facebook-f"></i></a>
+  						<a href="https://goo.gl/rBmiJR" target="_blank" class="home_links"><i class="fab fa-instagram"></i></a>
+  						<a href="https://goo.gl/9umjVL" target="_blank" class="home_links"><i class="fab fa-github-alt"></i></a>
+		</div>
+	</div>
+
+	</header>
+
+
+	<section class="about" id="scrollToIt">
+
+		<div class="container" id="about">
+		
+			<div class="row text">
+
+				<div class="col-xs-12">
+					
+					<h1>Hi there! Call me sandro and i'm a web developer</h1>
+
+					<h2>I'm fresh to a web development, with a desire to constantly learn and improve.  </h2>
+					
+				</div>
+			</div>
+
+				<div class="row myskills">
+
+						<h1> languages i speak:</h1>
+
+						<p>I tend to start everything from scartch and try to keep the code clean.</p>
+
+					<div class="col-xs-12 col-sm-4">
+
+						<i class="fab fa-html5 fa-4x outline-orange"></i>
+						<p id="html_title">HTML5</p>
+
+					</div>
+					<div class="col-xs-12 col-sm-4">
+
+						<i class="fab fa-css3-alt fa-4x outline-blue"></i>
+						<p id="css_title">CSS3</p>
+
+
+					</div>
+					<div class="col-xs-12 col-sm-4">
+
+						<i class="fab fa-js-square fa-4x outline-yellow"></i>
+						<p id="js_title">Javascript</p>
+					</div>
+					<div class="col-xs-12">
+						<p class="about_tools">Tools:</p>
+						<p class="float_text">Jquery</p>
+						<p class="float_text">NodeJS</p>
+						<p class="float_text">Bootstrap</p>
+						<p class="float_text">Codepen</p>
+						<p class="float_text">JSFiddle</p>
+						<p class="float_text">Github</p>
+
+						<p class="float_text">Bitbucket</p>
+					</div>
+					</div>
+					
+
+		</div>
+	</section>
+
+	<section class="projects" id="projects">
+		<div class="container">
+			<h1 class="title">My Projects</h1>
+
+			<div class="row">
+
+				
+								<figure class=" col-md-4 col-sm-6 col-xs-12">
+    				<div class="figureimage">
+        					<img src="images/1.jpeg" alt="">
+
+        					<div class="after"> <p>Welp! Nothing here for now </p> 
+
+        						<a href="#">Go to Website <i class="fas fa-arrow-right"></i> </a>
+        					</div>
+
+    				</div>
+    						
+				</figure>
+				<figure class=" col-md-4 col-sm-6 col-xs-12">
+    				<div class="figureimage">
+        					<img src="images/1.jpeg" alt="">
+
+        					<div class="after"> <p>Welp! Nothing here for now </p> 
+
+        						<a href="#">Go to Website <i class="fas fa-arrow-right"></i> </a>
+        					</div>
+    				</div>
+    						
+				</figure>
+				<figure class=" col-md-4 col-sm-6 col-xs-12">
+    				<div class="figureimage">
+        					<img  src="images/1.jpeg" alt="">
+
+        					<div class="after"> <p>Welp! Nothing here for now </p> 
+
+
+        						<a href="#">Go to Website <i class="fas fa-arrow-right"></i> </a>
+        					</div>
+    				</div>
+
+				</figure>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="contact" id="contactMe">
+		<div class="container">
+			<h1 class="title" >Contact Me</h1>
+
+			<div class="row">
+				<div class="col-sm-2 col-xs-1">
+				</div>
+				<div class="col-sm-8 col-xs-10">
+
+					<form method="post" action="index.php" autocomplete="off" >
+				<div class="form-group col-sm-6">
+
+					
+   					<input type="text" class="form-control"  id="name" name="sender" required >
+   					<span class="underline"></span>
+   					<label for="name">Your name</label>
+   					
+ 				</div>
+  				<div class="form-group col-sm-6">
+
+  					
+    				<input type="email" class="form-control"  id="email" name="senderEmail" required>
+    				<span class="underline"></span>
+    				<label for="email">Email</label>
+    				
+    				
+  				</div>
+  				<div class="form-group col-sm-12">
+  					
+  					<textarea class="form-control" id="textarea" name="message" required></textarea>
+  					<span class="underline"></span>
+  					<label for="textarea" >Message</label>
+  				</div>
+  				<div class="form-group col-sm-12 cnt-btn">
+ 				 <button type="submit" class="btn btn-default">Submit<i class="fas fa-arrow-right" name="submit"></i> </button>
+ 				</div>
+			</form>
+
+				</div>
+				<div class="col-sm-2 col-xs-1">
+				</div>
+			</div>
+			<h3>Or feel free to contact me directly at : <strong>sandrokekeliaa@gmail.com</strong> </h3>
+		</div>
+
+		
+		<div id="map"></div>
+
+	</section>
+  
+
+
+  <footer class="footer">
+
+  	<div class="container">
+
+  		<div class="row">
+
+  			<div class="col-xs-12">
+  				
+  				
+
+  				
+  				<div class="circle" id="scrollTop">
+
+  						<i class="fas fa-angle-double-up fa-3x"></i>
+
+  				</div>
+  						<h4>Social:</h4>
+  				
+
+
+
+
+  						<a href="https://goo.gl/f8km1T" target="_blank" class="soc_link"><i class="fab fa-linkedin-in"></i></a>
+  						<a href="https://goo.gl/ocs8DJ" target="_blank" class="soc_link"><i class="fab fa-facebook-f"></i></a>
+  						<a href="https://goo.gl/rBmiJR" target="_blank" class="soc_link"><i class="fab fa-instagram"></i></a>
+  						<a href="https://goo.gl/9umjVL" target="_blank" class="soc_link"><i class="fab fa-github-alt"></i></a>
+
+
+  				
+  				
+
+  				<p>My logo goes here</p>
+  				<p>Made by &#169; Sandro Kekelia</p>
+  				<p>Location Georgia,Earth</p>
+  				
+  			</div>
+  		</div>
+  	</div>
+
+  </footer>
+   
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+
+
+</body>
+</html>
