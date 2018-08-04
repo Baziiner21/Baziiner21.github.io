@@ -284,7 +284,40 @@ hr.opacity
     opacity: .0;
 }
 
+.home .social_links{
+    margin-bottom: 10px;
+    float: right;
+    text-align: center;
+}
 
+.home .social_links .home_links:link,
+.home .social_links .home_links:visited
+{
+    font-size: 0.9em;
+
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+    margin-left: 6px;
+    padding-top: 3.5px;
+
+    transition: .2s linear;
+
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.home .social_links .home_links:hover
+{
+    transition: .2s linear;
+
+    color: #0f1020;
+    border: 1px solid #24CF88;
+    background: #24CF88;
+}
 
 
 
@@ -983,6 +1016,9 @@ textarea:focus ~ .underline:after
     padding: 0 10px;
 }
 
+    .home .social_links{
+        display: none;
+    }
 }
 
 
