@@ -247,7 +247,7 @@ hr
     visibility: visible;
 
     margin-top: 175px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     text-align: center;
     transition: opacity .75s;
 
@@ -285,7 +285,7 @@ hr.opacity
 }
 
 .home .social_links{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     float: right;
     text-align: center;
 }
