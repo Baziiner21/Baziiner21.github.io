@@ -6,7 +6,7 @@
 
 .navbar-default
 {
-    transition: .25s;
+    transition: .15s;
     border: none;
     background-color: transparent;
 
@@ -24,16 +24,16 @@
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:visited
 {
-    position: absolute;
     font-weight: 900;
-    transition:  0s linear;
+    transition: .15s linear;
     text-transform: uppercase;
     color: #fff;
-    border-top:solid #24CF88 2px;
-    width: 120px;
-    border-left:solid #4286F4 2px;
+
+
     font-family: 'Montserrat', sans-serif;
 }
+
+
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:visited,
@@ -58,12 +58,6 @@
     background: none;
 }
 
-.navbar-default .navbar-right{
-
-    margin-top: 10px;
-    transition: .25s;
-
-}
 
 
 
@@ -901,27 +895,21 @@ textarea:focus ~ .underline:after
 
 .navbar-default.scroll
 {
-    transition: .25s linear;
+    transition: .15s linear;
 
     border-bottom: 1px solid #0f1020;
     background: #fff;
 }
 
-.navbar-default.scroll .navbar-right{
-
-    margin-top: 0;
-    transition: .25s;
-}
 
 .navbar-default.scroll .navbar-brand
 {
-    transition:  0s ;
-    overflow: hidden;
+    transition: .25s linear;
+
     background: -webkit-linear-gradient(85deg, #24cf88 , #4286f4);
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
-    border:none;
-    width: 250px;
 }
 
 .navbar-default.scroll .navbar-toggle .icon-bar
@@ -992,12 +980,13 @@ textarea:focus ~ .underline:after
     }
     .navbar-default
     {
-        transition: .25s;
+        transition: .35s;
+
         background-color: #0f1020;
     }
     .navbar-default.scroll
     {
-        height: 35px;
+        transition: .35s;
     }
 
 
@@ -1012,7 +1001,6 @@ textarea:focus ~ .underline:after
         margin-top: 25px;
     }
 
-
     .float_text{
     text-align: center;
     float:center;
@@ -1020,25 +1008,12 @@ textarea:focus ~ .underline:after
     font-weight: 600;
 }
         .navbar-default .container-fluid{
-    padding: 10px 25px;
-
+    padding: 0 10px;
 }
 
     .home .social_links{
         display: none;
     }
-    .navbar-default .navbar-toggle{
-            margin-top: 15px;
-    }
-    .navbar-default .navbar-brand{
-        padding-top: 10px;
-    }
-
-     .navbar-default.scroll .navbar-toggle{
-            margin-top: 0px;
-    }
-    .navbar-default.scroll .navbar-brand{
-        padding-top: 7px;
 }
 
 
@@ -1149,7 +1124,7 @@ textarea:focus ~ .underline:after
 
 
 
-@-webkit-keyframes gradientBackground
+/*@-webkit-keyframes gradientBackground
 {
     0%
     {
@@ -1208,7 +1183,7 @@ textarea:focus ~ .underline:after
     {
         background-position: 0 92%;
     }
-}
+}*/
 
 
 
