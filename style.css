@@ -6,7 +6,7 @@
 
 .navbar-default
 {
-    transition: .15s;
+    transition: .25s;
     border: none;
     background-color: transparent;
 
@@ -26,7 +26,7 @@
 {
     position: absolute;
     font-weight: 900;
-    transition: .15s linear;
+    transition:  0s linear;
     text-transform: uppercase;
     color: #fff;
     border-top:solid #24CF88 2px;
@@ -61,6 +61,7 @@
 .navbar-default .navbar-right{
 
     margin-top: 10px;
+    transition: .25s;
 
 }
 
@@ -900,7 +901,7 @@ textarea:focus ~ .underline:after
 
 .navbar-default.scroll
 {
-    transition: .15s linear;
+    transition: .25s linear;
 
     border-bottom: 1px solid #0f1020;
     background: #fff;
@@ -909,12 +910,13 @@ textarea:focus ~ .underline:after
 .navbar-default.scroll .navbar-right{
 
     margin-top: 0;
+    transition: .25s;
 }
 
 .navbar-default.scroll .navbar-brand
 {
-    transition: .15s linear;
-
+    transition:  0s ;
+    overflow: hidden;
     background: -webkit-linear-gradient(85deg, #24cf88 , #4286f4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -990,12 +992,12 @@ textarea:focus ~ .underline:after
     }
     .navbar-default
     {
-        transition: .35s;
+        transition: .25s;
         background-color: #0f1020;
     }
     .navbar-default.scroll
     {
-        transition: .35s;
+        transition: .25s;
     }
 
 
