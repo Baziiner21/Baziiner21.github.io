@@ -155,6 +155,9 @@ h4,h3,h2,h1{
     box-shadow: inset 0px -56px 69px -46px rgba(15, 16, 32,.75);
 
 }
+.home p{
+    color: #fff;
+}
 .home h1
 {
     font-weight: 900;
@@ -567,7 +570,7 @@ figure{
     border-top: 1px solid #E6ECF8;
 
     margin-top: 100px; 
-
+    margin-bottom: 25px;
     padding-top: 100px;
 
     text-align: center;
@@ -583,15 +586,12 @@ figure{
 
 .contact form
 {
-    margin-top: 50px;
+    margin-top: 25px;
 
     text-align: left;
 }
 
-.contact form .cnt-btn
-{
-    text-align: center;
-}
+
 .contact form input
 {
     border: none;
@@ -644,7 +644,7 @@ figure{
 .contact form textarea:active,
 .contact form textarea:focus
 {
-    height: 150px;
+    height: 95px;
 
     transition: .75s;
 
@@ -662,11 +662,14 @@ textarea:valid ~ label
 {
     font-size: .8em;
 
-    top: -20px;
+    top: -10px;
 
     color: #24cf88;
 }
-
+textarea:focus ~ label,
+textarea:valid ~ label{
+    top: -20px;
+}
 textarea ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label
@@ -781,10 +784,14 @@ textarea:focus ~ .underline:after
 {
     width: 100%;
     height: 300px;
+
 }
+#map2
+{
+    width: 100%;
+    height: 300px;
 
-
-
+}
 
 .footer
 {
@@ -1006,6 +1013,13 @@ textarea:focus ~ .underline:after
     .home .social_links{
         display: none;
     }
+
+    .phninv{
+        display:none;
+    }
+        .cnt-btn{
+        text-align: center;
+    }
 }
 
 
@@ -1111,7 +1125,13 @@ textarea:focus ~ .underline:after
     display: inline;
 }
 
+    .deskinv{
+    display: none;
+}
 
+    .cnt-btn{
+        text-align: right;
+    }
 }
 
 

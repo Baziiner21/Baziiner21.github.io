@@ -36,8 +36,46 @@
     }
 ]
         });
+         var map2 = new google.maps.Map(document.getElementById('map2'), {
+          center: {lat: 41.721699, lng: 44.773360},
+          zoom: 12,
+          styles: [
+    {
+        "stylers": [
+            {
+                "hue": "#ff1a00"
+            },
+            {
+                "invert_lightness": true
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 33
+            },
+            {
+                "gamma": 0.5
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2D333C"
+            }
+        ]
+    }
+]
+        });
          var marker = new google.maps.Marker({
           position: tbilisi,
           map: map ,
+        });
+         var marker2 = new google.maps.Marker({
+          position: tbilisi,
+          map: map2 ,
         });
       }
