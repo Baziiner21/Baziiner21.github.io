@@ -161,10 +161,13 @@ h1
 {
     width: 100%;
     padding-top: 50px;
-
+    position: relative;
     text-align: center;
-
-    background-image: linear-gradient(125deg,#24cf88,#4286f4);
+    background-image: linear-gradient(65deg,#24cf88,#4286f4,#24cf88 75%);
+         animation: gradientBackground 20s linear infinite;
+    -moz-animation:gradientBackground 20s linear infinite;
+    -webkit-animation: gradientBackground 20s linear infinite;
+    background-size: 400% 175%;
     -webkit-box-shadow: inset 0 -56px 69px -46px rgba(15, 16, 32,.75);
        -moz-box-shadow: inset 0 -56px 69px -46px rgba(15, 16, 32,.75);
             box-shadow: inset 0 -56px 69px -46px rgba(15, 16, 32,.75);
@@ -248,10 +251,9 @@ h1
     height: 4px;
     margin-left: -2px;
 
-    animation-name: scroll_wheel;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-
+    animation: scroll_wheel 3s infinite;
+    -webkit-animation: scroll_wheel 3s infinite;
+    -moz-animation: scroll_wheel 3s infinite;
     border-radius: 50%;
     background: #0f1020;
 }
@@ -302,11 +304,14 @@ hr.opacity
 
 .home .social_links
 {
-    float: right;
-
-    margin-bottom: 10px;
-
+    float: center;
+    background-color:#0F1020;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
     text-align: center;
+    -webkit-animation: opacit 1s ease ;
+    -moz-animation: opacit 1s ease ;
+    animation: opacit 1s ease ;
 }
 
 .home .social_links .home_links:link,
@@ -318,15 +323,19 @@ hr.opacity
 
     width: 30px;
     height: 30px;
-    margin-right: 3px;
+    margin-right: 6px;
     margin-left: 6px;
-    padding-top: 3.2px;
+    padding: 3.2px;
 
     transition: .2s linear;
 
     color: #fff;
     border: 1px solid #fff;
     border-radius: 50%;
+
+        -webkit-animation: opacit 3.25s ease ;
+    -moz-animation: opacit 3.25s ease ;
+    animation: opacit 3.25s ease ;
 }
 
 .home .social_links .home_links:hover
@@ -500,6 +509,8 @@ hr.opacity
 {
     border-top: 5px solid #e6ecf8;
     background-color: #fff;
+    border-bottom: 1px solid #e6ecf8;
+    padding-bottom: 50px;
 }
 .projects h1
 {
@@ -639,11 +650,7 @@ figure
 
 .contact
 {
-    margin-top: 100px;
     margin-bottom: 25px;
-    padding-top: 100px;
-
-    border-top: 1px solid #e6ecf8;
     background: #fff;
 }
 .contact h1
@@ -1247,66 +1254,66 @@ textarea:focus ~ .underline:after
 
 
 
-/*@-webkit-keyframes gradientBackground
+@-webkit-keyframes gradientBackground
 {
     0%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
     50%
     {
-        background-position: 100% 9%;
+        background-position: 100% 0%;
     }
     100%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
 }
 @-moz-keyframes gradientBackground
 {
-    0%
+       0%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
     50%
     {
-        background-position: 100% 9%;
+        background-position: 100% 0%;
     }
     100%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
 }
 @-o-keyframes gradientBackground
 {
-    0%
+       0%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
     50%
     {
-        background-position: 100% 9%;
+        background-position: 100% 0%;
     }
     100%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
 }
 @keyframes gradientBackground
 {
-    0%
+       0%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
     50%
     {
-        background-position: 100% 9%;
+        background-position: 100% 0%;
     }
     100%
     {
-        background-position: 0 92%;
+        background-position: 0 65%;
     }
-}*/
+}
 
 
 
@@ -1455,3 +1462,39 @@ textarea:focus ~ .underline:after
         opacity: 0;
     }
 }
+
+@-webkit-keyframes opacit{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes opacit{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes opacit{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    
+}
+@keyframes opacit{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
