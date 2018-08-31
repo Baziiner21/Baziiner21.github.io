@@ -10,6 +10,11 @@
 
     border: none;
     background-color: transparent;
+
+            -webkit-animation: opacit 1s ease ;
+    -moz-animation: opacit 1s ease ;
+    animation: opacit 1s ease ;
+}
 }
 
 .navbar-default .container-fluid
@@ -20,7 +25,8 @@
 
 
 .navbar-default .navbar-brand,
-.navbar-default .navbar-brand:visited
+.navbar-default .navbar-brand:visited,
+.navbar-default .navbar-brand:hover
 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -190,6 +196,10 @@ h1
     opacity: 1;
     color: #fff;
     background: #242534;
+
+            -webkit-animation: opacit 1.75s ease ;
+    -moz-animation: opacit 1.75s ease ;
+    animation: opacit 1.75s ease ;
 }
 
 
@@ -208,6 +218,10 @@ h1
     opacity: 1;
     color: #fff;
     background: #242534;;
+
+            -webkit-animation: opacit 2.25s ease ;
+    -moz-animation: opacit 2.25s ease ;
+    animation: opacit 2.25s ease ;
 }
 
 
@@ -238,6 +252,11 @@ h1
 
     border: 2px solid #fff;
     border-radius: 20px;
+
+            -webkit-animation: opacit 2.75s ease ;
+    -moz-animation: opacit 2.75s ease ;
+    animation: opacit 2.75s ease ;
+}
 }
 .mouse_scroll .wheel
 {
@@ -309,9 +328,9 @@ hr.opacity
     padding-top: 12.5px;
     padding-bottom: 12.5px;
     text-align: center;
-    -webkit-animation: opacit 1s ease ;
-    -moz-animation: opacit 1s ease ;
-    animation: opacit 1s ease ;
+    -webkit-animation: opacit 3s ease ;
+    -moz-animation: opacit 3s ease ;
+    animation: opacit 3s ease ;
 }
 
 .home .social_links .home_links:link,
@@ -333,9 +352,9 @@ hr.opacity
     border: 1px solid #fff;
     border-radius: 50%;
 
-        -webkit-animation: opacit 3.25s ease ;
-    -moz-animation: opacit 3.25s ease ;
-    animation: opacit 3.25s ease ;
+        -webkit-animation: opacit 3.75s ease ;
+    -moz-animation: opacit 3.75s ease ;
+    animation: opacit 3.75s ease ;
 }
 
 .home .social_links .home_links:hover
