@@ -42,7 +42,6 @@
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:visited,
-.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus
 {
     font-family: 'Roboto Slab', serif;
@@ -52,8 +51,13 @@
     text-transform: uppercase;
 
     color: #fff;
-}
 
+     transition: .3s;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    opacity: .7;
+    transition: .3s;
+}
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active > a:hover,
 .navbar-default .navbar-nav > li.active > a:focus
@@ -282,7 +286,7 @@ h1
 {
     visibility: visible;
 
-    margin-top: 175px;
+    margin-top: 180px;
     margin-bottom: 80px;
 
     transition: opacity .75s;
