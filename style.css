@@ -264,7 +264,6 @@ h1
     -moz-animation: opacit 2.75s ease ;
     animation: opacit 2.75s ease ;
 }
-}
 .mouse_scroll .wheel
 {
     position: absolute;
@@ -298,36 +297,6 @@ h1
     opacity: 1;
 }
 
-.home h1.opacity
-{
-    transition: opacity .5s;
-
-    opacity: .0;
-}
-
-
-.home h2.opacity
-{
-    transition: opacity .75s;
-
-    opacity: .0;
-}
-
-hr.opacity
-{
-    transition: opacity .75s;
-
-    opacity: .0;
-}
-
-.home .div_mouse.opacity
-{
-    transition: opacity .75s;
-    pointer-events: none;
-
-    opacity: .0;
-}
-
 .home .social_links
 {
     float: center;
@@ -335,6 +304,7 @@ hr.opacity
     padding-top: 12.5px;
     padding-bottom: 12.5px;
     text-align: center;
+    transition: opacity .75s;
     -webkit-animation: opacit 3s ease ;
     -moz-animation: opacit 3s ease ;
     animation: opacit 3s ease ;
@@ -375,8 +345,37 @@ hr.opacity
 
 
 
+.home h1.opacity
+{
+    transition: opacity .5s;
+
+    opacity: .0;
+}
 
 
+.home h2.opacity
+{
+    transition: opacity .75s;
+
+    opacity: .0;
+}
+
+
+.home .div_mouse.opacity
+{
+    transition: opacity .75s;
+    pointer-events: none;
+
+    opacity: .0;
+}
+
+.home .social_links.opacity{
+
+    transition: opacity .75s;
+    pointer-events: none;
+
+    opacity: .0;
+}
 
 
 .about
@@ -1028,6 +1027,8 @@ textarea:focus ~ .underline:after
 
     border-bottom: 1px solid #0f1020;
     background: #fff;
+
+    
 }
 
 

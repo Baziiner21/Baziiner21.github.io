@@ -30,44 +30,43 @@ $(window).scroll(function(){
 	if($(window).width()<= 750){
 
 		$('h1').toggleClass('opacity', $(this).scrollTop() > 30);
-		$('hr').toggleClass('opacity', $(this).scrollTop() > 80);
-		$('h2').toggleClass('opacity', $(this).scrollTop() > 100);
-		$('div').toggleClass('opacity', $(this).scrollTop() > 200);
+		$('h2').toggleClass('opacity', $(this).scrollTop() > 95);
+		$('.div_mouse').toggleClass('opacity', $(this).scrollTop() > 200);
 	}
 
 	else if($(window).width() > 750 && $(window).width() < 970 ){
 
 
 		$('h1').toggleClass('opacity', $(this).scrollTop() > 40);
-		$('hr').toggleClass('opacity', $(this).scrollTop() > 80);
 		$('h2').toggleClass('opacity', $(this).scrollTop() > 100);
-		$('div').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.div_mouse').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.social_links').toggleClass('opacity', $(this).scrollTop() > 395);
 	}
 	else if($(window).width() >= 970 && $(window).width() < 1170 ){
 
 
 
 		$('h1').toggleClass('opacity', $(this).scrollTop() > 40);
-		$('hr').toggleClass('opacity', $(this).scrollTop() > 80);
 		$('h2').toggleClass('opacity', $(this).scrollTop() > 100);
-		$('div').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.div_mouse').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.social_links').toggleClass('opacity', $(this).scrollTop() > 400);
 	}
 
 	else if($(window).width() >= 1326 && $(window).width()<1400){
 
 
 		$('h1').toggleClass('opacity', $(this).scrollTop() > 40);
-		$('hr').toggleClass('opacity', $(this).scrollTop() > 80);
 		$('h2').toggleClass('opacity', $(this).scrollTop() > 100);
-		$('div').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.div_mouse').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.social_links').toggleClass('opacity', $(this).scrollTop() > 410);
 	}
 	else{
 
 
 		$('h1').toggleClass('opacity', $(this).scrollTop() >40);
-		$('hr').toggleClass('opacity', $(this).scrollTop() > 80);
 		$('h2').toggleClass('opacity', $(this).scrollTop() > 100);
-		$('div').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.div_mouse').toggleClass('opacity', $(this).scrollTop() > 250);
+		$('.social_links').toggleClass('opacity', $(this).scrollTop() > 415);
 	}
 
 });
