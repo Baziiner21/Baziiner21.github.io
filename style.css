@@ -15,7 +15,6 @@
     -moz-animation: opacit 1s ease ;
     animation: opacit 1s ease ;
 }
-}
 
 .navbar-default .container-fluid
 {
@@ -301,10 +300,12 @@ h1
 {
     float: center;
     background-color:#0F1020;
+
     padding-top: 12.5px;
     padding-bottom: 12.5px;
     text-align: center;
-    transition: opacity .75s;
+
+    transition: .5s;
     -webkit-animation: opacit 3s ease ;
     -moz-animation: opacit 3s ease ;
     animation: opacit 3s ease ;
@@ -323,8 +324,7 @@ h1
     margin-left: 6px;
     padding: 3.2px;
 
-    transition: .2s linear;
-
+    transition: .68s;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 50%;
@@ -333,16 +333,51 @@ h1
     -moz-animation: opacit 3.75s ease ;
     animation: opacit 3.75s ease ;
 }
-
+.home .social_links .home_links:link:nth-child(1){
+    padding-left: 7.5px;
+}
+.home .social_links .home_links:link:nth-child(2){
+    padding-left: 10px;
+}
+.home .social_links .home_links:link:nth-child(3){
+    padding-left: 7px;
+}
+.home .social_links .home_links:link:nth-child(4){
+    padding-left: 6.5px;
+}
 .home .social_links .home_links:hover
 {
-    transition: .2s linear;
-
     color: #0f1020;
     border: 1px solid #24cf88;
+    border-radius: 5px;
     background: #24cf88;
+    padding-right: 90px;
+    transition: .5s ;
+
+
 }
 
+.home .social_links .home_links span{
+    
+    opacity: 0;
+    pointer-events: none;
+    color: #0f1020;
+}
+
+.home .social_links .home_links:hover span{
+    opacity: 1;
+    letter-spacing:0;
+    margin-left: 10px;
+}
+.home .social_links .home_links:hover:nth-child(3) span{
+    margin-left: 8px;
+
+}
+
+.home .social_links .home_links:hover:nth-child(4) span{
+    margin-left: 15px;
+
+}
 
 
 .home h1.opacity
@@ -1515,8 +1550,9 @@ textarea:focus ~ .underline:after
     }
     100%{
         opacity: 1;
-    
+    }
 }
+
 @keyframes opacit{
 
     0%{
@@ -1525,3 +1561,4 @@ textarea:focus ~ .underline:after
     100%{
         opacity: 1;
     }
+}
