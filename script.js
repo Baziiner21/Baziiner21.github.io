@@ -1,5 +1,9 @@
-var $root = $('html, body');
+$(document).scrollTop(0);
 
+
+
+// Button with <a href> attribute  which scrolls to a specific ID (in this case it scrolls down to a div with an "about" class)
+var $root = $('html, body');
 $('a[href^="#scrollToIt"]').click(function () {
     $root.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -7,23 +11,27 @@ $('a[href^="#scrollToIt"]').click(function () {
 
     return false;
 });
+//
 
 
+//Button which scroll to top on click
+$(function() {
 
+	$("#scrollTop").on('click', function()
 
+		{ $("HTML, BODY").animate({ scrollTop: 0 }, 2000);
 
-$(function() { 
-
-	$("#scrollTop").on('click', function() 
-
-		{ $("HTML, BODY").animate({ scrollTop: 0 }, 2000); 
-
-	}); 
+	});
 
 
 });
 
 
+//
+
+
+
+//Toggle "opacity" (Which makes specific Element disappear on scroll) class on scroll
 $(window).scroll(function(){
 
 
@@ -70,20 +78,24 @@ $(window).scroll(function(){
 	}
 
 });
+//
 
 
 
 
 
-
-
+//Toggles class "scroll" , Used for navbar to change it's styling on scroll
 $(window).scroll(function(){
 
 	$('nav').toggleClass('scroll', $(this).scrollTop() > 0);
 
 });
+//
 
 
+
+
+//Creates 'Active' class,  After scrolling to a specific ID from a navbar and toggles mentioned 'Active class'
 
 // Cache selectors
 var lastId,
@@ -102,7 +114,7 @@ var lastId,
 menuItems.click(function(e){
   var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({ 
+  $('html, body').stop().animate({
       scrollTop: offsetTop
   }, 900);
   e.preventDefault();
@@ -112,7 +124,7 @@ menuItems.click(function(e){
 $(window).scroll(function(){
    // Get container scroll position
    var fromTop = $(this).scrollTop()+topMenuHeight;
-   
+
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
      if ($(this).offset().top < fromTop)
@@ -121,16 +133,14 @@ $(window).scroll(function(){
    // Get the id of the current element
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
-   
+
    if (lastId !== id) {
        lastId = id;
        // Set/remove active class
        menuItems
          .parent().removeClass("active")
          .end().filter("[href='#"+id+"']").parent().addClass("active");
-   }                   
+   }
 });
 
-
-
-
+//
