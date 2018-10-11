@@ -1,5 +1,8 @@
-$(document).scrollTop(0);
 
+
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
 
 
 // Button with <a href> attribute  which scrolls to a specific ID (in this case it scrolls down to a div with an "about" class)
